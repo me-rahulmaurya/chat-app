@@ -417,7 +417,7 @@ a:hover {
 }
 
 .message-bubble {
-  max-width: 65%;
+  max-width: 100%;
   min-width: 60px;
   width: fit-content;
   padding: 0.75rem 1.1rem;
@@ -425,7 +425,8 @@ a:hover {
   font-size: 0.9rem;
   line-height: 1.5;
   word-break: break-word;
-  white-space: pre-wrap;
+  white-space: normal;
+  overflow-wrap: break-word;
   position: relative;
 }
 
@@ -459,7 +460,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   max-width: 65%;
-} 
+  width: fit-content;
+}
 
 .messages-loading {
   display: flex;
