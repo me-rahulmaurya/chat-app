@@ -23,9 +23,10 @@ const io = new Server(server, {
 socketHandler(io);
 
 app.use(cors({
-  origin: process.env.CLIENT_URL,
-  credentials: true
+  origin: '*',
+  credentials: false
 }));
+
 app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
